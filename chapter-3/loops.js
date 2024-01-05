@@ -1,4 +1,7 @@
 // Loops Of JS
+
+// note :  If the condition never becomes false then the loop will never end and this might crash your run time  
+
 // First 5 natural number's sum
 
 let some = 0;
@@ -43,13 +46,14 @@ for (let a in obj){
 // value of ritika is 80
 // value of abhinav is 69
 
-// TypeError: obj is not iterable
+// TypeError: obj is not iterable. it can be iterable if it is array or string........
 // for (let b of obj){
 //     console.log("value of b " + b + " is " + obj[b]);
 // }
 
 
 //  it can access only this keys not values = output given below.
+
 // s 
 // h 
 // i 
