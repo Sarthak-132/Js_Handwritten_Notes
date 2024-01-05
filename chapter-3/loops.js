@@ -64,6 +64,21 @@ for (let a in obj){
 for (let b of "shivang"){
     console.log(b);
 }
+// while loop 
+let numbing = 6;
+numbing = Number.parseInt(numbing);
+
+let z = 0 ;
+while( z < numbing ){
+    console.log(z);
+    z++;
+}
 
 
-//  do-while loop runs at least one time and then stops.
+//  do-while loop : runs at least one time and then stops.
+
+let x = 0;
+do {
+    console.log(x);
+    x++;  
+} while (x < numbing);
