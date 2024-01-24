@@ -6,3 +6,7 @@ console.log("Hello shobharam");
 // console.warn(warning);
 
 
+let nums = [1, 2, 3]
+let y = Math.min(...nums);
+console.log(y);
+

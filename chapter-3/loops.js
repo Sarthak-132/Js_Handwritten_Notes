@@ -63,8 +63,7 @@ for (let a in obj){
 // g 
 for (let b of "shivang"){
     console.log(b);
-}
-// while loop 
+}// while loop 
 let numbing = 6;
 numbing = Number.parseInt(numbing);
 
