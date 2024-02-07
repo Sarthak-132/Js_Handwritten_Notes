@@ -38,6 +38,7 @@ let obj = {
     abhinav : 69
 }
 // for in loop can access keys value but for of loop can't. It's only prints values 
+//  It can also be used with the array
 for (let a in obj){
     console.log("value of a " + a + " is " + obj[a]);
 }
