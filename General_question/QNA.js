@@ -24,3 +24,4 @@ let y = 5;
 // Hoisting         output - error = Can not access 'y' before initialization 
 // console.log(y)
 // const y = 5;
+

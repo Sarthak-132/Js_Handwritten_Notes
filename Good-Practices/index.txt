@@ -1,0 +1,10 @@
+what is Good Practices --->
+
+1. comment all the functions and logics in javascript and in html each parent child class properly defind.
+2. reduce the number of lines of codes within 200 - 300 lines.
+3. Format document.
+4. follow the proper heirarchy of the folder structure.
+5. Remove all the console.log() from the code.
+6. Remove all the unused variables.
+7. try to use ES6 syntaxes.
+8. add 5 words comment in each functionality.
