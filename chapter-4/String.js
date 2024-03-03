@@ -1,9 +1,16 @@
 // This is template litteral method (\n , \t , \r takes only one character)
-// let a = "Mani";
-// let b = "raj";
+let a = "Mani";
+let b = "raj";
 
-// let both = (`${a} is a friend of ${b}`);
-// console.log(both);
+let both = (`${a} is a friend of ${b}`);
+console.log(both);
+
+let name = "Hello\rHye"
+let name1 = "Hey\rHello"
+let name2 = "Haanji\rraam"
+console.log(name);
+console.log(name1);
+console.log(name2);
 
 // strings are immutable you can not change them
 // methods of string-------->this also takes negative numbers
