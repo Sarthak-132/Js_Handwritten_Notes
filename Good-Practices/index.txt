@@ -9,3 +9,23 @@ what is Good Practices --->
 7. try to use ES6 syntaxes.
 8. add 5 words comment in each functionality.
 9. Use proper naming conventions
+
+`````````````````````````````````````````````````
+
+# concept of Immutable and mutable in javascript
+
+1. Immutable - strings are immutable. Inorder to access the character at an index we use the following syntax.
+
+`````````````````````````````````````````````````
+let str = "Hello";
+let str2 = "Lomhee";
+
+console.log(str[0]);    ---> H
+console.log(str[1]);    ---> e
+console.log(str2[0]);   ---> L
+
+`````````````````````````````````````````````````
+
+2. Mutable - arrays are mutable. Inorder to access the character at an index we use the following syntax.
+
+```

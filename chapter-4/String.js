@@ -5,36 +5,36 @@ let b = "raj";
 let both = (`${a} is a friend of ${b}`);
 console.log(both);
 
-let name = "Hello\rHye"
-let name1 = "Hey\rHello"
-let name2 = "Haanji\rraam"
-console.log(name);
-console.log(name1);
-console.log(name2);
+let name34 = "Hello\rHye"
+let name12 = "Hey\rHello"
+let name22 = "Haanji\rraam"
+console.log(name34);
+console.log(name12);
+console.log(name22);
 
 // strings are immutable you can not change them
 // methods of string-------->this also takes negative numbers
-// let name1 = "Raja bhai ";
-// let name2 = 'thik   hai';
-// let str = "Apple, Banana, Kiwi";
-// console.log(str.substring(7, 17));
-// console.log(str.substring(7));         //after 7 - Banana, Kiwi
-// console.log(str.substring(-4));        //0 to -4 -->  Kiwi
-// console.log(name1.length);
-// console.log(name1.toUpperCase());
-// console.log(name1.toLowerCase());
-// console.log(name1.slice(2,9));    // add first element and exclude last elem
-// console.log(name1.slice(1));
-// console.log(name1.replace("bhai", "bhau"));    //replaceAll()
-// console.log(name1.concat(" ", name2 , " ok "));
-// console.log(name1.trim(name1));        //trimStart()  and trimEnd()
+let name1 = "Raja bhai ";
+let name2 = 'thik   hai';
+let str = "Apple, Banana, Kiwi";
+console.log(str.substring(7, 17));
+console.log(str.substring(7));         //after 7 - Banana, Kiwi
+console.log(str.substring(-4));        //0 to -4 -->  Kiwi
+console.log(name1.length);
+console.log(name1.toUpperCase());
+console.log(name1.toLowerCase());
+console.log(name1.slice(2,9));    // add first element and exclude last elem
+console.log(name1.slice(1));
+console.log(name1.replace("bhai", "bhau"));    //replaceAll()
+console.log(name1.concat("", name2 , " ok "));
+console.log(name1.trim(name1));        //trimStart()  and trimEnd() #remove white space from start and end. 
 
 
 // // for loop for print string
-// let name5 = "John"
-// for(let i=0; i<(name5.length); i++) {
-//     console.log(name5[i]);
-// }
+let name5 = "John"
+for(let i=0; i<(name5.length); i++) {
+    console.log(name5[i]);git 
+}
 
 
 // // To convert the string to number and only show number from the sentence 
