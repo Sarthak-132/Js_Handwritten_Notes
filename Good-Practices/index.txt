@@ -30,7 +30,7 @@ str[2] = 'r'
 
 `````````````````````````````````````````````````
 
-2. Mutable - arrays are mutable.
+2. Mutable - arrays are mutable. It can br change.
 
 let array = [23, 34 ,22, 78, 67, "food", "alright", false]
 console.log(array);      // [23, 34 ,22, 78, 67, "food", "alright", false]
