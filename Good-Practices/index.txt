@@ -24,8 +24,18 @@ console.log(str[0]);    ---> H
 console.log(str[1]);    ---> e
 console.log(str2[0]);   ---> L
 
+can not change the string like that   ---->
+
+str[2] = 'r'
+
 `````````````````````````````````````````````````
 
-2. Mutable - arrays are mutable. Inorder to access the character at an index we use the following syntax.
+2. Mutable - arrays are mutable.
 
-```
+let array = [23, 34 ,22, 78, 67, "food", "alright", false]
+console.log(array);      // [23, 34 ,22, 78, 67, "food", "alright", false]
+array[2] = 100;          // changed the value 
+console.log(array);      // [23, 34 ,100, 78, 67, "food", "alright", false]
+
+
+``````````````````````````````````````````````````

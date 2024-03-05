@@ -33,11 +33,16 @@ console.log(name1.trim(name1));        //trimStart()  and trimEnd() #remove whit
 // // for loop for print string
 let name5 = "John"
 for(let i=0; i<(name5.length); i++) {
-    console.log(name5[i]);git 
+    console.log(name5[i]);
 }
 
+// .include method : it will print true or false 
+const sentence = "Hello, my name is Tom";
+const name = "Tom";
+console.log(sentence.includes(name)); 
+console.log(`The Name "${name}" ${sentence.includes(name) ? "is" : "is not"} in the sentence`); 
 
-// // To convert the string to number and only show number from the sentence 
+// To convert the string to number and only show number from the sentence 
 let hammerMan = "I need 846 volts of electricity";
 // let electricity1 = (hammerMan.slice(7,16));    //gives 846 volts      typeof = string
 // console.log(electricity1);
