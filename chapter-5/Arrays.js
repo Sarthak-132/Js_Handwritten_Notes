@@ -1,4 +1,6 @@
-// Arrays in JavaScript are ordered collections of data that can store multiple values in a single variable. Each item in an array has a numeric index that allows access to it. Arrays start at index zero and can be manipulated with various methods.3 Arrays can hold values of mixed types and are dynamic. Array can hold more than one values.
+// Arrays in JavaScript are ordered collections of data that can store multiple values in a single variable. 
+// Each item in an array has a numeric index that allows access to it. Arrays start at index zero and can be
+// manipulated with various methods.3 Arrays can hold values of mixed types and are dynamic. Array can hold more than one values.
 
 const fruits = [];
 fruits.push("banana", "apple", "peach");

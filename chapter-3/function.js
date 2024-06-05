@@ -12,7 +12,7 @@
 // function onePlusAvg(x,y){
 //     return (1 + (x+y)/2);
 // }
-
+ 
 // let a = 2 ;
 // let b = 5 ;
 // console.log("the answer is " + onePlusAvg(a,b));
@@ -42,7 +42,7 @@
 //     yada : 67,
 //     raju : 2
 // }
-// for (i=0; i<Object.keys(marks).length; i++){
+// for (let i=0; i<Object.keys(marks).length; i++){
 //     // console.log(marks[i]); ......cannot do this like this.......to iterate array use this method
 //     console.log( "Hello " + Object.keys(marks)[i] + " Your marks are : " + marks[Object.keys(marks)[i]] );
 // }
