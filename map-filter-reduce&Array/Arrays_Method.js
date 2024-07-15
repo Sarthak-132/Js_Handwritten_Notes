@@ -62,3 +62,4 @@ let num_num2 = (num_num.slice(2,4));
 console.log(num_num2); 
 
 
+  
