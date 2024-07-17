@@ -10,13 +10,18 @@ what is Good Practices --->
 8. add 5 words comment in each functionality.
 9. Use proper naming conventions
 
+
 `````````````````````````````````````````````````
+
 
 # concept of Immutable and mutable in javascript
 
 1. Immutable - strings are immutable. Inorder to access the character at an index we use the following syntax.
 
+
 `````````````````````````````````````````````````
+
+
 let str = "Hello";
 let str2 = "Lomhee";
 
@@ -28,7 +33,9 @@ can not change the string like that   ---->
 
 str[2] = 'r'
 
+
 `````````````````````````````````````````````````
+
 
 2. Mutable - arrays are mutable. It can br change.
 
@@ -39,3 +46,33 @@ console.log(array);      // [23, 34 ,100, 78, 67, "food", "alright", false]
 
 
 ``````````````````````````````````````````````````
+
+
+3. difference between undefined and not defined
+
+    =>  not defined means the thing that does not exist
+    =>  underfined means the thing that exist but not defined yet
+
+
+```````````````````````````````````````````````````````````````
+
+
+4. Execuation Context and Lexical Environment
+
+Execuation Context : - execution Context means function created the imaginary container when we run the function there are 3 things happen at that moment
+
+a. variablesb.
+b. funtion inside the parent function 
+c. Lexical environment of the function 
+
+=> that imaginary container is called execution context.
+
+funtion vs(){
+    var a = 12;
+    funtion def(){
+        var b = 23; 
+    }
+}
+
+-> so here in that imaginary container (a, def and lexical environment) will be present. 
+-> b variable can not use fucntion vs that is called lexical environment. it can access parents things but not of childrens. 

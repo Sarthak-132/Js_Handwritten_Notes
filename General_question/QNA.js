@@ -33,3 +33,17 @@ var greet = function () {
     console.log("Welcome to Board Infinity!");
 };
 greet();
+
+
+// 3. difference between undefined and not defined
+// =>  not defined means the thing that does not exist
+// =>  underfined means the thing that exist but not defined yet
+
+
+// difference between object and array
+// Array :- each element is accessed using its numerical index (starting from 0).
+
+// objects :- An object stores data or holds data in key-value pairs, where each key (a unique identifier) is associated with a value.
+
+// during the calculation the data store in called heap memory - HEAP MEMORY
+
