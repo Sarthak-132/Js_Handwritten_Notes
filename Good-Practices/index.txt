@@ -76,3 +76,4 @@ funtion vs(){
 
 -> so here in that imaginary container (a, def and lexical environment) will be present. 
 -> b variable can not use fucntion vs that is called lexical environment. it can access parents things but not of childrens. 
+
