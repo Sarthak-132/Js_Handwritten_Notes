@@ -35,7 +35,7 @@ var greet = function () {
 greet();
 
 
-// 3. difference between undefined and not defined
+3. difference between undefined and not defined
 // =>  not defined means the thing that does not exist
 // =>  underfined means the thing that exist but not defined yet
 
@@ -47,3 +47,7 @@ greet();
 
 // during the calculation the data store in called heap memory - HEAP MEMORY
 
+=> Truthy and Falsy values
+5 falsy values: 0, '', undefined, null, NaN, false, document.all rest of these all the truthy values
+
+=> do-while used when at least one time you want to run the code(Loop)
