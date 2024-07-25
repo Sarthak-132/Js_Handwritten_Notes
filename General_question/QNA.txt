@@ -51,3 +51,4 @@ greet();
 5 falsy values: 0, '', undefined, null, NaN, false, document.all rest of these all the truthy values
 
 => do-while used when at least one time you want to run the code(Loop)
+

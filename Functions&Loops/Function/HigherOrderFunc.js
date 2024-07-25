@@ -1,0 +1,1 @@
+// The function that accept one more function or return one more function - forEach method
