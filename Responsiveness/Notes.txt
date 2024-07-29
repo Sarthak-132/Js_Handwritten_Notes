@@ -1,0 +1,17 @@
+WHy do not use pixels?
+=>  These are fixed. when we change the screen size it will not change.It is not depends on parent.
+
+what is %?
+=>  % is something like how many miltiple(x) of parent. it depends on the parent size.
+
+what is vw and vh?
+=>  It is not depends on parent it behave according to screen size.
+
+what is vmax and vmin?
+=>  viewport maximum and viewport minimum 
+(vmax) is used as vw and it will work as vw until the value of height is not more than width. 
+(vmin) is used as vh and it will work as vh until the value of width is not more than height. 
+
+what is rem and em?
+=>  em = parent ka x multiple in parent you have to give that property and then use selector
+    where you want to use that property with em.
