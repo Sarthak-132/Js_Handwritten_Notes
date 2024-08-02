@@ -22,3 +22,5 @@ what is rem and em?
 
 
 => UNITS NOTE : - 1EM = 16PX
+
+=> if display property given by developer in that case animation will not work.
