@@ -15,3 +15,10 @@ what is vmax and vmin?
 what is rem and em?
 =>  em = parent ka x multiple in parent you have to give that property and then use selector
     where you want to use that property with em.
+
+    rem = r stands for root works on screen size and (1 rem = 16px)
+
+=> flex-wrap: wrap;  for do not shrink div if scren size small make them vertical.
+
+
+=> UNITS NOTE : - 1EM = 16PX
