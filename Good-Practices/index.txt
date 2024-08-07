@@ -77,3 +77,12 @@ funtion vs(){
 -> so here in that imaginary container (a, def and lexical environment) will be present. 
 -> b variable can not use fucntion vs that is called lexical environment. it can access parents things but not of childrens. 
 
+-------------------------------------------------------------------------------------------------
+
+USE STRICT -
+
+The directive looks like a string: "use strict" or 'use strict'. When it is located at the top of a script,
+the whole script works the “modern” way.
+Please make sure that "use strict" is at the top of your scripts, otherwise strict mode may not be enabled.
+Strict mode isn’t enabled here:
+
