@@ -52,3 +52,10 @@ greet();
 
 => do-while used when at least one time you want to run the code(Loop)
 
+----------------------------------------------------------------------------------------------------
+
+
+Debugging in the browser -
+
+
+
