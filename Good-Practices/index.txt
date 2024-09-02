@@ -86,3 +86,22 @@ the whole script works the “modern” way.
 Please make sure that "use strict" is at the top of your scripts, otherwise strict mode may not be enabled.
 Strict mode isn’t enabled here:
 
+-----------------------------------------------------------------------------------------------------------
+
+WHAT UIS STATEMENT AND EXPRESSIONS -
+
+EXPRESSIONS - THAT EVALUATE THE VALUE OR RETURNS ANY VALUE CALLED EXPRESSIONS
+
+STATEMENT - THAT ARE NOT RETURNS ANY VALUE CALLED STATEMENT.
+
+-------------------------------------------------------------------------------------------------------------
+
+OPERATOR PRECEDENCE -
+
+=> Expressions in parentheses are computed before the rest of the expression.
+   Function are executed before the result is used in the rest of the expression.
+
+   https://www.w3schools.com/js/js_precedence.asp
+
+---------------------------------------------------------------------------------------------------------------
+

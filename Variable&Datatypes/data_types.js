@@ -29,9 +29,15 @@ const item = {
 console.log(item["harry"])    //true
 console.log(item.aryan)   //undefined
 
+// difference between primitive and non primitive data types
+
+// primitive : - those can't change on runtime suppose we allote a = 4 then a= 8 it will take same memory.
+// non primitive : - those can change on runtime and can be more larger than primitive.
 
 
+// type conversion and type conversion
 
-
+// 1. when it converts by us the type of data
+// 2. when itself js  chnage the type of data  -  type conversion
 
 

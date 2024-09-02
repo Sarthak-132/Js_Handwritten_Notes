@@ -1,6 +1,6 @@
 // operators
 
-// 1. Arithmatic operators ( + , - , * , / , % , ** , ++ , -- )
+// 1. Arithmatic operators ( + , - , * , / , % , ** , ++ , -- ) also know as math operators 
 console.log("Arithmatic operators");
 let a = 30;
 let b = 5;
