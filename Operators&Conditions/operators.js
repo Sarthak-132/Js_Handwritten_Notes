@@ -70,3 +70,21 @@ console.log(!false);
 let x = 5;
 let z = Math.pow(x,2);
 console.log(z);
+
+
+// Nullish coalescing operator (??)
+// The nullish coalescing (??) operator is a logical operator that returns 
+// its right-hand side operand when its left-hand side operand is null or 
+// undefined, or 0 and otherwise returns its left-hand side operand.
+
+const foo = null ?? 'default string';
+console.log(foo);
+// Expected output: "default string"
+
+const baz = 0 ?? 42;
+console.log(baz);
+// Expected output: 0
+
+let name;
+console.log(name??false??"bahg");
+// Expected output: false
