@@ -51,3 +51,42 @@
 // for (const key in marks) {
 //     console.log(key + " your marks are : " + marks[key] );
 // }
+
+
+// / difference between loop and function 
+
+// funciton -
+
+// Functions are blocks of code that can be called multiple times from different parts of your program. 
+// They take arguments, which are values passed to the function when it’s invoked, and may return a value.
+
+// Code reuse: Write a function once and use it throughout your program.
+// Modularity: Break down complex code into smaller, manageable functions.
+// Easier maintenance: Update a function in one place, and the changes will propagate to all its callers.
+
+
+// Loop - 
+
+// Loops, on the other hand, allow you to execute a block of code repeatedly. 
+// JavaScript provides several types of loops, including for, while, and do...while loops.
+
+// Repeat a task until a condition is met.
+// Iterate over a collection, such as an array or object.
+// Perform a series of calculations or operations.
+
+
+
+// It is printing the value of calculation but not returning any value from the function that's why it gives undefined
+function returns(a , b) {                   // 6
+    console.log(a * b);                     //underfined
+}
+
+let result = returns (2, 3);
+console.log(result);
+
+
+
+// typeof function
+
+console.log(typeof returns);    //funciton
+console.log(typeof returns());  //Nan and undefined

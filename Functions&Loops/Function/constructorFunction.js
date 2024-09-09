@@ -6,6 +6,11 @@ A Function which envoke with "new" keyword , returns an Object , if we use "This
 it returns that Object. An object with all of the properties and mentioneds mentioned inside that function , 
 such funciton is called constructive function.
 */
+
+// A function is a sequence of commands or block of code that can be reused together later in a program.
+
+
+
 function sanhokGround(){
     this.width = 12;
     this.height = 14;
@@ -28,3 +33,8 @@ function button(color) {
 
 var redbtn = new button("red");
 var greenbtn = new button("green");
+
+
+
+
+

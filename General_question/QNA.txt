@@ -12,6 +12,11 @@ Javascript is used to create dynamic websites and web applications  */
 // var z ;
 // console.log(z);
 
+
+Hoisting -
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared.
+
 // Hoisting         output - undefined
 // console.log(y)
 // var y = 5;
@@ -55,7 +60,14 @@ greet();
 ----------------------------------------------------------------------------------------------------
 
 
-Debugging in the browser -
+default parameter -
+=> When no value is passed in the function definition, 
+   a default value is being set for the function definition, known as the default parameter.
 
+----------------------------------------------------------------------------------------------------------
 
+There are 2 phases in JS -
+=> creation and execution
+creation - variable declared
+execution - funciton execution and variable assigning
 
