@@ -14,7 +14,7 @@ console.log(name22);
 
 // strings are immutable you can not change them
 // methods of string-------->this also takes negative numbers
-let name1 = "Raja bhai ";
+let name1 = "Raja bhaijaan ";
 let name2 = 'thik   hai';
 let str = "Apple, Banana, Kiwi";
 console.log(str.substring(7, 17));
@@ -50,4 +50,18 @@ let hammerMan = "I need 846 volts of electricity";
 // let electricity = Number.parseInt(hammerMan.slice(7,16));    // 846   typeof = number
 // console.log(typeof electricity);
 // console.log(electricity);
+
+
+
+// toString
+let stringstring = 23;
+console.log(stringstring.toString());           // 23  
+console.log(typeof stringstring.toString());    // string
+
+
+// Split - split it where spaces are present. otherwise not split anything. converts string to array
+
+let splitting = "Hello, my name is grow";
+
+console.log(splitting.split(" "));     // [ 'Hello', 'my', 'name', 'is', 'grow' ]
 

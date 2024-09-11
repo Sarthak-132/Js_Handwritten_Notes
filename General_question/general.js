@@ -31,7 +31,7 @@ console.log(y);
 
 
     const newNumber = () => {
-        let random = Math.floor(Math.random() * 100);
+        let random = [Math.floor(Math.random() * 100)];
         console.log(random);    
     }
 

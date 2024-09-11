@@ -22,11 +22,11 @@ In other words; a variable can be used before it has been declared.
 // var y = 5;
 
 // Hoisting         output - error = Can not access 'y' before initialization
-// console.log(y);
+// console.log(y);    error - because it come in the TDZ temporal dead zone
 // let y = 5;
 
 // Hoisting         output - error = Can not access 'y' before initialization
-// console.log(y)
+// console.log(y)     error - because it come in the TDZ temporal dead zone
 // const y = 5;
 
 
@@ -69,5 +69,31 @@ default parameter -
 There are 2 phases in JS -
 => creation and execution
 creation - variable declared
-execution - funciton execution and variable assigning
+execution - funciton execution and variable assigning and execution
 
+----------------------------------------------------------------------------------------------------------
+
+Fully Hoisted -
+
+Function declarations are fully hoisted in JavaScript. This means you can call the function before
+it appears in the code because the entire function definition is moved to the top of its scope.
+
+console.log(sayHello()); // Output: "Hello!"
+
+function sayHello() {
+  return "Hello!";
+}
+
+
+Partial Hoisted -
+
+Variables declared with var are partially hoisted. Only the declaration is hoisted, not the initialization. 
+This means the variable is created at the top of its scope with an initial value of undefined, but the assignment 
+happens where it appears in the code.
+
+console.log(myVar); // Output: undefined
+var myVar = 5;
+console.log(myVar); // Output: 5
+
+
+-------------------------------------------------------------------------------------------------------------------------

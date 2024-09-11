@@ -1,4 +1,4 @@
-// arrow function 
+// arrow function - it is a alternative of expresseion function not of declaration function.
 // const hello = () => {
 //     console.log("Hello World!");          // it will not run untill it execute this hello ();
 //     return 'hi'
