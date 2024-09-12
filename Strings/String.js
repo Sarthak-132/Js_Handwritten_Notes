@@ -17,7 +17,7 @@ console.log(name22);
 let name1 = "Raja bhaijaan ";
 let name2 = 'thik   hai';
 let str = "Apple, Banana, Kiwi";
-console.log(str.substring(7, 17));
+console.log(str.substring(7, 17));     // add first element and exclude last element
 console.log(str.substring(7));         //after 7 - Banana, Kiwi
 console.log(str.substring(-4));        //0 to -4 -->  Kiwi
 console.log(name1.length);
@@ -53,15 +53,59 @@ let hammerMan = "I need 846 volts of electricity";
 
 
 
-// toString
+// toString - cnvert in string
 let stringstring = 23;
 console.log(stringstring.toString());           // 23  
 console.log(typeof stringstring.toString());    // string
 
 
 // Split - split it where spaces are present. otherwise not split anything. converts string to array
-
 let splitting = "Hello, my name is grow";
-
 console.log(splitting.split(" "));     // [ 'Hello', 'my', 'name', 'is', 'grow' ]
 
+
+// charAt -- it is not works for negative numbers
+let char = "Hello";
+console.log(char.charAt(4));     // o   
+
+
+// at - it works for negative numbers
+console.log(char.at(2));     // l
+console.log(char.at(-1));     // o
+
+
+// indexOf - to find the index numebr
+let ind = "hello everyone";
+console.log(ind.indexOf("e"))       //1
+console.log(ind.indexOf("e", 2))    //6
+
+
+// to find out ascii code - charCodeAt
+let character = "{";
+let characterNum = "{)sdF";
+console.log(character.charCodeAt());        //123    or     charCodeAt(0)
+console.log(characterNum.charCodeAt(2));    //115   
+console.log(characterNum.charCodeAt(7));    //NaN   (When charactor not present on that place index) 
+
+
+
+// startWith and endsWith check startswith or endswith or not - gives true or false
+
+let flask = "flare     gun";
+console.log(flask.startsWith("fl"));
+console.log(flask.endsWith("gun"));
+
+
+
+// trim - only works for ending and starting white spaces. trimEnd and trimStart
+console.log(flask.trim());
+
+
+// replace
+let myNAme = "Hello from Heaven";
+console.log(myNAme.replace("Heaven", "Earth"));
+
+
+// sort - it is not sort it in ascending or descending order while give 
+let numbers = [1, 2, 3 ,4 ,5 ,6 ,7 ,7 , 22, ]
+console.log(numbers.sort());                    //  [1, 2, 22, 3, 4, 5, 6,  7, 7]

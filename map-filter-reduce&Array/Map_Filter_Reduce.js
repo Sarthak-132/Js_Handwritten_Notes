@@ -37,6 +37,8 @@ let newarr = ar.reduce((h , g) =>{
 console.log(newarr);
 
 
+// These are higher order method of array 
+
 // Map: creates a new array by transforming every element in an array individually.
 
 // Filter: creates a new array by removing elements that don't belong.
