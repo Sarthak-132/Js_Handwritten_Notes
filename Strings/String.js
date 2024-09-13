@@ -107,5 +107,5 @@ console.log(myNAme.replace("Heaven", "Earth"));
 
 
 // sort - it is not sort it in ascending or descending order while give 
-let numbers = [1, 2, 3 ,4 ,5 ,6 ,7 ,7 , 22, ]
+let numbers = [1, 2, 3 ,4 ,5 ,6 ,7 ,7 , 22 ]
 console.log(numbers.sort());                    //  [1, 2, 22, 3, 4, 5, 6,  7, 7]

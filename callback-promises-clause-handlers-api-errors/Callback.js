@@ -62,22 +62,22 @@
 
 
 // error handling such as link doesn't exist and you added it in loadScript in that case :
-function loadScript(src,callback){
-    var script = document.createElement("script");
-    script.src = src;
-    script.onload = function(){
-        console.log("loaded src : " + src);
-        callback(src);
-    }
-    script.onerror = function(){
-        console.log("error loading src : " + src);
-    }
-    document.body.appendChild(script);
-}
-function hello(src){
-    alert("Hello World! \n" + src);
-}
-loadScript("https://cdn.jsd.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",hello)
+// function loadScript(src,callback){
+//     var script = document.createElement("script");
+//     script.src = src;
+//     script.onload = function(){
+//         console.log("loaded src : " + src);
+//         callback(src);
+//     }
+//     script.onerror = function(){
+//         console.log("error loading src : " + src);
+//     }
+//     document.body.appendChild(script);
+// }
+// function hello(src){
+//     alert("Hello World! \n" + src);
+// }
+// loadScript("https://cdn.jsd.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",hello)
 
 
 

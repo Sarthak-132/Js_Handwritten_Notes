@@ -11,7 +11,7 @@ console.log(c , typeof c);             // 1_2_3......  string
 let d = a.pop();
 console.log(a,d);           // [ 1, 2, 3, 4, 5 ] 6
 
-// // push method - modify element into array
+// // push method - modify element into array add elem.. in the end
 let e = a.push(7);
 console.log(a);
 

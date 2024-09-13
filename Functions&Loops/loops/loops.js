@@ -62,6 +62,9 @@ for (let a in obj){
 // a 
 // n 
 // g 
+
+// best for array for of loop
+
 for (let b of "shivang"){
     console.log(b);
 }// while loop 
