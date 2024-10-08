@@ -61,5 +61,8 @@ let num_num = [1,2,3,4,5];
 let num_num2 = (num_num.slice(2,4));
 console.log(num_num2); 
 
-
+// find
+// findIndex
+// lastIndexof
+// firstIndexOf
   
