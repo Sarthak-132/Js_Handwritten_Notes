@@ -1,6 +1,6 @@
 const data = [
-    { name: "john", age: 24, profession: "developer" },
     { name: "jane", age: 27, profession: "admin" },
+    { name: "john", age: 24, profession: "developer" },
 ];
 
 // 1. Print Developers
@@ -23,8 +23,8 @@ function addData() {
 
 // 3. Remove Admins
 function removeAdmin() {
-    const removeAdm = data.filter((item)=>{
-        return item.profession !== "admin";
+    const removeAdm = data.filter((values)=>{
+        return values.profession !== "admin";
     })
     console.log(removeAdm);
 }
@@ -45,16 +45,35 @@ function averageAge() {
 }
 
 // 6. Age Check
-function checkAgeAbove25() {}
+function checkAgeAbove25() {
+    const aboveAge = data.filter((item)=>{
+        return item.age > 25;
+    })
+    console.log(aboveAge);
+}
 
-// 7. Unique Professions
-function uniqueProfessions() {}
+// 7. Unique Professions - Unique Professions (`uniqueProfessions` function): Log all distinct professions present in the array.
+function uniqueProfessions() {
+
+}
 
 // 8. Sort by Age
-function sortByAge() {}
+function sortByAge() {
+    const sortAge = data.sort((max,min)=>{
+        return max.age - min.age;
+    })
+    console.log(sortAge);
+}
 
 // 9. Update Profession
-function updateJohnsProfession() {}
+function updateJohnsProfession() {
+    const updateProfession = data.map((item)=>{
+        return item.name === "john" ? {...item, profession: "manager"} : item;
+    })
+    console.log(updateProfession)
+}
 
 // 10. Profession Count
-function getTotalProfessions() {}
+function getTotalProfessions() {
+
+}
