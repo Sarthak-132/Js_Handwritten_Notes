@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: cornsilk;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+    </style>
+</head>
+<body>
+
+<!-- <form>
+ <input type="text" class="input">
+ <input type="number" class="input">
+ <input type="email" class="input">
+ <input type="text" class="input">
+ <input type="password" class="input">
+
+
+</form>
+
+<button onclick="changeType()" >change type</button> -->
+<!-- <div class="container">
+
+    <h1 class="title">
+        hello shubham
+    </h1>
+</div> -->
+
+<input type="text" placeholder="write your first name" id="fname">
+
+<input type="text" placeholder="write your last name" id="lname">
+<button onclick="addName()">
+    add name
+</button>
+
+<div class="nameContainer">
+
+
+</div>
+
+
+<button onclick="addMore()">add more</button>
+
+
+<script>
+
+// function changeType(){
+//     const input=document.querySelectorAll('.input')
+// console.log(input)
+
+// input.forEach((item,index)=>{
+
+// item.type=='text'?item.type='email':item
+
+
+// })
+// console.log(input)
+// }
+
+
+/*
+create HTML element using javascript
+*/
+// createElement()
+
+// let obj={
+
+// }
+// obj.newValue='sdkljfskdj'
+
+
+// let div=document.createElement('div')
+// div.className='container'
+// let h1=document.createElement('h1')
+// h1.className='title'
+// h1.innerText='Hello shubham'
+
+// //append
+// div.append(h1)
+
+// // console.log(h1)
+
+// document.body.append(div)
+// console.log(div)
+
+
+let nameContainer=document.querySelector('.nameContainer')
+function addName(){
+let fname=document.getElementById('fname')
+let lname=document.getElementById('lname')
+
+console.log(fname.value)
+console.log(lname.value)    
+const h1Element=document.createElement('h1')
+// <h1 class='title'>  
+    
+    
+//     </h1>
+h1Element.className='title'
+// h1Element.innerText=`${fname.value} ${lname.value}`
+h1Element.innerText=fname.value + " " + lname.value
+nameContainer.append(h1Element)
+console.log(h1Element)
+}
+
+// input{
+//     type:'askjdf',
+//     id:'alskdjf',
+//     placeholder:'al;skdjflas'
+//     value:''
+// }
+
+function addMore(){
+let bold=document.createElement('b')
+bold.innerText='hello i am bold'
+// document.body.append(bold)
+// nameContainer.append(bold)
+document.body.insertBefore(bold,nameContainer)
+
+}
+
+
+</script>
+
+
+    
+</body>
+</html>

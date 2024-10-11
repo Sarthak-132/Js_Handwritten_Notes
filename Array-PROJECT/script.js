@@ -1,7 +1,13 @@
 const data = [
     { name: "jane", age: 27, profession: "admin" },
-    { name: "john", age: 24, profession: "developer" },
+    { name: "john", age: 29, profession: "developer" },
+    { name: "johnIBRAHIM", age: 27, profession: "developer" },
+    { name: "johnDOE", age: 24, profession: "javascript developer" },
+    { name: "johnCena", age: 25, profession: "manager" },
+    { name: "johny", age: 22, profession: "manager" },
 ];
+
+["admin", "developer", "javascript developer", "manager"]
 
 // 1. Print Developers
 function printDeveloper() {
@@ -50,11 +56,19 @@ function checkAgeAbove25() {
         return item.age > 25;
     })
     console.log(aboveAge);
+
+    
 }
 
 // 7. Unique Professions - Unique Professions (`uniqueProfessions` function): Log all distinct professions present in the array.
 function uniqueProfessions() {
-
+    let unique = []
+    data.forEach((item)=>{
+        if(!unique.includes(item.profession)){          // true   false gives includes
+            unique.push(item.profession);
+        }
+    })
+    console.log(unique);
 }
 
 // 8. Sort by Age
@@ -67,13 +81,20 @@ function sortByAge() {
 
 // 9. Update Profession
 function updateJohnsProfession() {
-    const updateProfession = data.map((item)=>{
-        return item.name === "john" ? {...item, profession: "manager"} : item;
+    // const updateProfession = data.map((item)=>{
+    //     return item.name === "john" ? {...item, profession: "manager"} : item;
+    // })
+
+    const updateedProf = data.forEach((item)=>{
+        if(item.name === "john"){
+            item.profession = "manager";
+        }
     })
-    console.log(updateProfession)
+    // console.log(updateProfession)
+    console.log(updateedProf);
 }
 
 // 10. Profession Count
 function getTotalProfessions() {
-
+    
 }
