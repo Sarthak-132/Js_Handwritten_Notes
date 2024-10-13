@@ -18,3 +18,17 @@ console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
 console.log(fruits.length); // 10
 console.log(fruits[8]); // undefined
 
+
+
+// how to know array is array or not because it is shows object in typeof
+
+var fruits_f = ["mango","apple","banana"];
+console.log( fruits_f);
+fruits_f[1] = "orange";
+console.log(fruits_f);
+
+// typeof
+console.log(typeof fruits_f);
+
+// Array.isArray
+console.log(Array.isArray(fruits_f));
