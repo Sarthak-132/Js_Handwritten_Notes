@@ -210,3 +210,200 @@ function oneFun(){
     twoFun();
 }
 console.log(oneFun());
+
+
+
+// block scope and function scope
+// let and const are block scope
+// var is function scope
+
+// {
+//     let nameOf = "Harshit";
+// }
+// console.log(nameOf);         // Error - nameOf is not defined
+
+
+{
+    let nameOf = "Harshit";
+    console.log(nameOf);            // Harshit
+}
+let nameOf = "Garima";
+console.log(nameOf);                // Garima             
+
+
+if(true){
+    var naming = "harshing";
+    console.log(naming);            // harshing
+}
+console.log(naming);                // harshing      var will access the value of inside the block
+
+
+
+// function myApp(){
+//     if(true){
+//         let lastName = "Dohare";
+//         console.log(first)
+//     }
+//     console.log(first);
+// }
+// myApp();                            // firstName is not defined  but for var it will give answer
+
+
+// NaN
+function Adding(a,b){
+    return a + b;
+}
+const result = Adding(1);
+console.log(result);                // NaN  -  solution for it NaN
+
+
+
+
+// Solution if b is undefined ........ then
+
+// function AddTwos(c , s){
+//     if(typeof s === "undefined"){
+//         s = 0;
+//     }
+//     return c+s;
+// }
+// const ans = AddTwos(1);
+// console.log(ans);
+
+
+
+
+// Another Solution if b is undefined ........ then
+
+function AddTwos(c , s=0){
+
+    return c+s;
+}
+
+const ans = AddTwos(1);
+console.log(ans);
+
+
+
+
+// Rest PARAMETER Concept --------
+
+// sum of all the arguments
+
+// function addAll(...numberSum){
+//     console.log(numberSum);
+//     console.log(Array.isArray(numberSum));
+// }
+// addAll(1,2,3,4,5,6);
+
+
+function addAllNum(...numberSumRes){
+    let total = 0;
+    for(let numb of numberSumRes){
+        total = total + numb;
+    }
+    return total;
+}
+const done = addAllNum(1,2,3,4,5,6);
+console.log(done);
+
+
+
+
+// parameter(param destructuring) - used with objects
+
+// object
+// React - mostly used in react 
+
+const person = {
+    fName : "Gyan",
+    gender : "male",
+    age : "23",
+}
+
+// function getDetails(png){
+//     console.log(png.fName, png.gender, png.age);
+// }
+// getDetails(person);
+
+
+// destructuring
+function printDetails({fName, gender, age}){
+    console.log(fName, gender, age);    
+}
+printDetails(person); 
+
+
+
+
+// callback function
+
+// function functionCallback(callback){
+//     callback();
+// }
+
+// function functionCallbackAgain(){
+//     console.log("hello guys");   
+// }
+// functionCallback(functionCallbackAgain);
+
+
+
+
+function iterate(callback){
+    console.log("my world");
+    callback();
+}
+
+function condition(){
+    console.log("Conditions are true");
+}
+
+iterate(condition);
+
+
+
+// function returning function
+
+function newFun(){
+    function innerFun(){
+        return "hello world again";
+    }
+    return innerFun;
+}
+
+const funAgain = newFun();   // now here funAgain is a function
+console.log(funAgain());     // or funcAgain()
+
+
+
+// callback function and function returning function are higher order functions........
+
+// fill Method 
+// value , start , end 
+
+const ourArray = [1,2,3,4,5,6,7,8,9,0];
+ourArray.fill(0 , 2 , 5);
+console.log(ourArray);
+
+
+
+// splice Method
+// start , delete , insert
+
+const ArrayIs  =  ["item1", "item2", "item3"];
+
+// delete
+ArrayIs.splice(1,1);  //(indexno, delete_item_number_fromarray)
+console.log(ArrayIs);
+
+// insert
+ArrayIs.splice(1,0, "harshit");  //(indexno, delete_item_number_fromarray , item)
+console.log(ArrayIs);
+ArrayIs.splice(1,0, "RajuBaba");  //(indexno, delete_item_number_fromarray , item)
+
+console.log(ArrayIs);
+
+// we can also story in array that deleted element
+const splicing = ArrayIs.splice(1,1);    //(indexno, delete_item_number_fromarray)
+console.log("deleted item", splicing);
