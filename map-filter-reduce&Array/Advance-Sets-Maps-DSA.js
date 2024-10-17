@@ -65,9 +65,11 @@ else{
     console.log("No");
 }
 
+ 
+
 // when unique elements need from array 
 const myArm = [1,2,3,4,5,6,7,8,9,3,4,5,2,6,8,4];
-const uniqueElem = new Set(myArm);             //set will extract new array and previous will be as well as 
+const uniqueElem = new Set(myArm);                  //set will extract new array and previous will be as well as 
 console.log(uniqueElem);
 
 let length = 0;

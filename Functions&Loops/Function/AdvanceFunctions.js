@@ -246,7 +246,7 @@ console.log(naming);                // harshing      var will access the value o
 //     }
 //     console.log(first);
 // }
-// myApp();                            // firstName is not defined  but for var it will give answer
+// myApp();                            // first is not defined  but for var it will give answer
 
 
 // NaN
@@ -261,7 +261,7 @@ console.log(result);                // NaN  -  solution for it NaN
 
 // Solution if b is undefined ........ then
 
-// function AddTwos(c , s){
+// function AddTwos (c , s){
 //     if(typeof s === "undefined"){
 //         s = 0;
 //     }
