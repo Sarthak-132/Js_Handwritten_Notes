@@ -78,8 +78,36 @@ console.log(this);                  // gives window object
 // call apply and bind - interview purpose
 
 
+// suppose we want to borrow about function from user_1 to user_2
+
+function harry(laptop , mobile){
+    console.log(this.firstName , this.age , laptop , mobile);
+}
+
+const user_1 = {
+    firstName : "MohanDas",
+    age : 24,
+    about : function(hobby , favMusician){
+        console.log(this.firstName , this.age)
+        console.log(this.firstName , this.age, hobby , favMusician );
+    }
+}
+
+const user_2 = {
+    firstName : "BhagwanDas",
+    age : 26,
+}
+
+user_1.about.call(user_2);                               // BhagwanDas 26
+user_1.about.call();                                     // UNDEFINED UNDEFINED
+user_1.about.call(user_2 , "guitar"  );                  // BhagwanDas 26 guitar UNDEFINED
+user_1.about.call(user_2 , "guitar" , "pritam");         // BhagwanDas 26 guitar pritam
+
+harry.call(user_2 , "hp" , "motorola");                  // BhagwanDas 26 hp motorola
 
 
+// apply uses same as call just by in array
+harry.apply(user_2 , ["hp" , "motorola"]);               // BhagwanDas 26 hp motorola
 
 
 
