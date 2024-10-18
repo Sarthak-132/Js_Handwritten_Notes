@@ -15,7 +15,7 @@
 
 
 function personInfo(){
-    console.log(`I am ${this.firstName} and i am ${this.age}`);
+    console.log(`I am ${this.firstName} and i am ${this.age} years old.`);
 }
 
 const person_1 = {
@@ -36,5 +36,50 @@ const person_3 = {
     about : personInfo
 }
 
+personInfo();
+person_1.about();
+person_2.about();
+person_3.about();
+// console.log(personInfo.about());   // personInfo.about is not defined.........
 
-console.log(personInfo.about());
+
+
+// this keyword
+console.log(this);                  // gives window object
+// console.log(window);                // gives window object
+// console.log(this === window);       // true
+
+
+
+// function myFunc(){
+//     console.log("Hello");
+// }
+// myFunc();
+// window.myFunc();             // same output as function myFunc()
+
+
+
+// function myFunc(){
+//     console.log(this);
+// }
+// window.myFunc();            // gives window object  ......  it can create problem that's why we use use strict mode
+
+
+// use strict mode
+// "use strict";
+// function myFunc(){
+//         // "use strict"
+//         console.log(this);
+//     }
+//     window.myFunc();                      // gives undefined 
+
+
+
+// call apply and bind - interview purpose
+
+
+
+
+
+
+
