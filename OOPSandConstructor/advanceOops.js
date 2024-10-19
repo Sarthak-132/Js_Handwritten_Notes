@@ -92,7 +92,7 @@ const user_1 = {
         console.log(this.firstName , this.age, hobby , favMusician );
     }
 }
-
+ 
 const user_2 = {
     firstName : "BhagwanDas",
     age : 26,
@@ -103,11 +103,17 @@ user_1.about.call();                                     // UNDEFINED UNDEFINED
 user_1.about.call(user_2 , "guitar"  );                  // BhagwanDas 26 guitar UNDEFINED
 user_1.about.call(user_2 , "guitar" , "pritam");         // BhagwanDas 26 guitar pritam
 
+// call
 harry.call(user_2 , "hp" , "motorola");                  // BhagwanDas 26 hp motorola
 
 
 // apply uses same as call just by in array
 harry.apply(user_2 , ["hp" , "motorola"]);               // BhagwanDas 26 hp motorola
+
+// bind - always return a function
+let harryFunc = harry.blind(user_2 , "guitar" , "bach");
+harryFunc();
+
 
 
 
