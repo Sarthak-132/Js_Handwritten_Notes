@@ -170,3 +170,59 @@ console.log(myOwn.myownproperty);                            // can be my so cal
 console.log(myOwn());                                        // HelloMan
 
 
+
+// name properties teels us -----> name of function
+// function provides more usefull properties
+// Note - function gives us free space ...... in actual free kind of nothing only empty object {} ..... for sake of explanation
+// and this object called prototype.....
+ 
+// only function has the prototype property
+console.log(myOwn.prototype);       // gives {constructor} in console of browser
+myOwn.prototype.abc = "abc";
+myOwn.prototype.xyz = "xyz";
+myOwn.prototype.sing = function(){
+    return "i am ok"
+};
+console.log(myOwn.prototype);       
+console.log(myOwn.prototype.sing());       
+
+
+
+// __proto__ - it is reference of Object chain that you creates.
+// prototype - it is an empty Object. 
+
+
+// we don't need one more function and define each methods because if we do not remember to add any one method it will lead mistake
+// so we can do like that use prototype
+
+function createUser(firstName , lastName , email , age , address){
+    const user = Object.create(createUser.prototype);
+    user.firstName = firstName;
+    user.lastName = lastName;
+    user.email = email;
+    user.age = age;
+    user.address = address;
+    user.about = createMethod.about;
+    user.is18 = createMethod.is18;
+    return user;
+}
+
+createUser.prototype.about = function(){
+    return `${this.firstName} is ${this.age} years old.`
+};
+
+createUser.prototype.is18 = function(){
+    return this.age >= 18
+};
+
+const userName1 = createUser("harshit", "vashsitha", "harshit@gmail.com", 28, "my address")
+const userName2 = createUser("harshita", "vash", "harshita@gmail.com", 30, "my address")
+const userName3 = createUser("harsh", "vashi", "harsh@gmail.com", 33, "my address")
+
+console.log(userName1)
+console.log(userName1.about());
+
+
+
+
+// new keyword
