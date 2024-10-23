@@ -59,33 +59,33 @@ const user_1 = {
 
 // we have 2 methods is18 and about and it is repeating again and again so we can use it outer the function
 
-const createMethod = {
-    about : function(){
-        return `${this.firstName} is ${this.age} years old.`
-    },
-    is18 : function(){
-        return this.age >= 18
-    }
-} 
+// const createMethod = {
+//     about : function(){
+//         return `${this.firstName} is ${this.age} years old.`
+//     },
+//     is18 : function(){
+//         return this.age >= 18
+//     }
+// } 
 
-function createUser(firstName , lastName , email , age , address){
-    const user = {};
-    user.firstName = firstName;
-    user.lastName = lastName;
-    user.email = email;
-    user.age = age;
-    user.address = address;
-    user.about = createMethod.about;
-    user.is18 = createMethod.is18;
-    return user;
-}
+// function createUser(firstName , lastName , email , age , address){
+//     const user = {};
+//     user.firstName = firstName;
+//     user.lastName = lastName;
+//     user.email = email;
+//     user.age = age;
+//     user.address = address;
+//     user.about = createMethod.about;
+//     user.is18 = createMethod.is18;
+//     return user;
+// }
 
-const userName_1 = createUser("harshit", "vashsitha", "harshit@gmail.com", 28, "my address")
-const userName_2 = createUser("harshita", "vash", "harshita@gmail.com", 30, "my address")
-const userName_3 = createUser("harsh", "vashi", "harsh@gmail.com", 33, "my address")
-console.log(userName_1);
-console.log(userName_1.about());
-console.log(userName_3.about());
+// const userName_1 = createUser("harshit", "vashsitha", "harshit@gmail.com", 28, "my address")
+// const userName_2 = createUser("harshita", "vash", "harshita@gmail.com", 30, "my address")
+// const userName_3 = createUser("harsh", "vashi", "harsh@gmail.com", 33, "my address")
+// console.log(userName_1);
+// console.log(userName_1.about());
+// console.log(userName_3.about());
 
 
 
@@ -127,7 +127,7 @@ console.log(userName_3.about());
 // const obj_4 = Object.create(obj_1);
 // obj_4.hey = "Hello";
 // console.log(obj_4);         
-// the things that javascript do not get in object there is reference present in [[prototype]] or __proto__ that is in console of browser
+// // the things that javascript do not get in object there is reference present in [[prototype]] or __proto__ that is in console of browser
 
 // console.log(obj_4.__proto__);                  // { key1: 'value1', key2: 'value2' }
 
@@ -246,6 +246,7 @@ console.log(userName_3.about());
 
 // const client = new createClient ("MohanDas" , 25);
 // console.log(client);
+// console.log(client.about());
 
 
 
@@ -253,40 +254,40 @@ console.log(userName_3.about());
 // new keyword use - use then only start name of function with capital letter`
 // this is called constructor function
 // constructor function - that constructing something for us like object 
-function CreateUs(firstName , lastName , email , age , address){
-        // const user = Object.create(createUser.prototype);                no need of this line because of new keyword
-        // instead of targeting object name we use this keyword here
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.age = age;
-        this.address = address;
+// function CreateUs(firstName , lastName , email , age , address){
+//         // const user = Object.create(createUser.prototype);                no need of this line because of new keyword
+//         // instead of targeting object name we use this keyword here
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.email = email;
+//         this.age = age;
+//         this.address = address;
     
-        // return user;                                                     no need of this line because of new keyword
-    }
+//         // return user;                                                     no need of this line because of new keyword
+//     }
     
-    CreateUs.prototype.about = function(){
-        return `${this.firstName} is ${this.age} years old.`
-    };
+//     CreateUs.prototype.about = function(){
+//         return `${this.firstName} is ${this.age} years old.`
+//     };
     
-    CreateUs.prototype.is18 = function(){
-        return this.age >= 18
-    };
+//     CreateUs.prototype.is18 = function(){
+//         return this.age >= 18
+//     };
     
-    const userName1 = new CreateUs("harshit", "vashsitha", "harshit@gmail.com", 28, "my address")
-    const userName2 = new CreateUs("harshita", "vash", "harshita@gmail.com", 30, "my address")
-    const userName3 = new CreateUs("harsh", "vashi", "harsh@gmail.com", 33, "my address")
+//     const userName1 = new CreateUs("harshit", "vashsitha", "harshit@gmail.com", 28, "my address")
+//     const userName2 = new CreateUs("harshita", "vash", "harshita@gmail.com", 30, "my address")
+//     const userName3 = new CreateUs("harsh", "vashi", "harsh@gmail.com", 33, "my address")
     
-    console.log(userName1)
-    console.log(userName1.about());
+//     console.log(userName1)
+//     console.log(userName1.about());
 
 
 
-    // suppose we want to see key of the object then 
-    for(let key in userName1){
-        console.log(key);
-        // if we do not want to print any property of prototype then use hasOwnProperty method
-        if(userName1.hasOwnProperty(key)){
-            console.log(key);
-        }
-    }
+//     // suppose we want to see key of the object then 
+//     for(let key in userName1){
+//         console.log(key);
+//         // if we do not want to print any property of prototype then use hasOwnProperty method
+//         if(userName1.hasOwnProperty(key)){
+//             console.log(key);
+//         }
+//     }

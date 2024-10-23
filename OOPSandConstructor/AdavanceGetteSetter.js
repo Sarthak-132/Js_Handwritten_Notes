@@ -17,3 +17,11 @@ class Animal {
 let a = new Animal ('Bruno');
 a.fly()
 console.log(a.name)
+
+
+
+
+
+class person {
+    
+}

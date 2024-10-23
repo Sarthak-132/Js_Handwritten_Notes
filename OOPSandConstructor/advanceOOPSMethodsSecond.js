@@ -1,26 +1,26 @@
-let numbers = [1,2,3];
-console.log(numbers);
-// on - (numbers.) many methods will show (this methods js get from prototype)
-// and prototype only of function can be but it is not a function
+// let numbers = [1,2,3];
+// console.log(numbers);
+// // on - (numbers.) many methods will show (this methods js get from prototype)
+// // and prototype only of function can be but it is not a function
 
-// internally js creates array with array constructor and we can call it using new keyword
+// // internally js creates array with array constructor and we can call it using new keyword
 
-let num = new Array(1,2,3);
-console.log(Array.prototype);                      // Array.prototype or use this object.getPrototypeOf
-console.log(Object.getPrototypeOf(num));           
-console.log(num);                                  // [methods] those are in array form but array are object in js
+// let num = new Array(1,2,3);
+// console.log(Array.prototype);                      // Array.prototype or use this object.getPrototypeOf
+// console.log(Object.getPrototypeOf(num));           
+// console.log(num);                                  // [methods] those are in array form but array are object in js
 
 
-function hell(){
-    console.log("hmmm");
-}
-// prototype
-console.log(hell.prototype);                        // {} and constructor inner in that
-// we can change the prototype object to array
-hell.prototype = [];
-console.log(hell.prototype);
-hell.prototype.push('1');
-console.log(hell.prototype);
+// function hell(){
+//     console.log("hmmm");
+// }
+// // prototype
+// console.log(hell.prototype);                        // {} and constructor inner in that
+// // we can change the prototype object to array
+// hell.prototype = [];
+// console.log(hell.prototype);
+// hell.prototype.push('1');
+// console.log(hell.prototype);
 
 
 
@@ -38,35 +38,35 @@ console.log(hell.prototype);
 // 4. different semantic - this keyword behavior: In JavaScript, the value of this can change depending on how a function 
 // is called, unlike in class-based languages where it is typically bound to the instance.
 
-class CreateUser {
-    // constructor() will create object for us
-    // here no need to create empty object and return it 
-    constructor(firstName , lastName , email , age , address){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.age = age;
-        this.address = address;
-    }          
-    about(){
-        return `${this.firstName} is ${this.age} years old.`
-    }         
-    is18(){
-        return this.age >= 18
-    }               
-    kungFu(kungfu){
-        console.log(kungfu);
-    }
-}
+// class CreateUser {
+//     // constructor() will create object for us
+//     // here no need to create empty object and return it 
+//     constructor(firstName , lastName , email , age , address){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.email = email;
+//         this.age = age;
+//         this.address = address;
+//     }          
+//     about(){
+//         return `${this.firstName} is ${this.age} years old.`
+//     }         
+//     is18(){
+//         return this.age >= 18
+//     }               
+//     kungFu(kungfu){
+//         console.log(kungfu);
+//     }
+// }
 
-// class constructor CreateUser cannot be invoked without new keyword
-const userName1 = new CreateUser("harshit", "vashsitha", "harshit@gmail.com", 28, "my address");  
-const userName2 = new CreateUser("harshita", "vash", "harshita@gmail.com", 30, "my address");
-const userName3 = new CreateUser("harsh", "vashi", "harsh@gmail.com", 33, "my address");
-console.log(userName1);
-console.log(userName1.about());
-console.log(Object.getPrototypeOf(userName1));      // {} object
-console.log(userName1.kungFu("KungFu pandas"));
+// // class constructor CreateUser cannot be invoked without new keyword
+// const userName1 = new CreateUser("harshit", "vashsitha", "harshit@gmail.com", 28, "my address");  
+// const userName2 = new CreateUser("harshita", "vash", "harshita@gmail.com", 30, "my address");
+// const userName3 = new CreateUser("harsh", "vashi", "harsh@gmail.com", 33, "my address");
+// console.log(userName1);
+// console.log(userName1.about());
+// console.log(Object.getPrototypeOf(userName1));      // {} object
+// console.log(userName1.kungFu("KungFu pandas"));
 
 
 
@@ -85,13 +85,47 @@ class Animal {
     sleep(){
         return `${this.firstName} is sleeping.`;
     }
-    age(){
-        return this.age <= 1;
+    isCute(){
+        return true;
     }
 }
 
-const animalWorld = new Animal("Cat" , "White");
+const animalWorld = new Animal("Cat" , "White" , 25);
 console.log(animalWorld); 
 console.log(animalWorld.eat()); 
 console.log(animalWorld.sleep()); 
-console.log(animalWorld.age()); 
+console.log(animalWorld.isCute()); 
+
+
+// Inheritance 
+// object or instance are same 
+  
+class Dog extends Animal {
+    constructor (firstName , age , speed){
+        // super is used to call the constructor of parent class
+        super(firstName, age);
+        this.speed = speed;
+    }
+
+    run(){
+        return `${this.firstName} is running at ${this.speed} km/hr.`;
+    }
+
+    sleep(){
+        return `Modified : ${this.firstName} is sleeping but not properly`;
+    }
+
+}
+
+const tommy = new Dog ("tommy" , "brown" , 8 , 35);
+console.log(tommy); 
+console.log(tommy.eat());           // this methods are not in Dog class (inherit by Dog)
+
+// first it will check it in Dog class...if present then execute then it will check in Animal
+console.log(tommy.sleep());         
+
+console.log(tommy.isCute());        // this methods are not in Dog class (inherit by Dog)
+console.log(tommy.run());
+ 
+
+
