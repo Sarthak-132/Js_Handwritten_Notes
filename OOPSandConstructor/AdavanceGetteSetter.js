@@ -31,8 +31,21 @@ class Person {
     fullName(){
         return `${this.firstName} ${this.lastName}`
     }
+    // get - used as we can access it  as a object key (property) instead of property method.
+    get fullNameOption(){
+        return `${this.firstName} ${this.lastName}`
+    }
 }
 
 const person_1 = new Person("harshit" , "sharma" , 6);
-console.log(person_1);
+// console.log(person_1.firstName);
+// console.log(person_1.fullName());
+// console.log(person_1.fullNameOption);
 
+console.log(person_1.firstName);
+console.log(person_1.lastName);
+
+person_1.setName("Mohit" , "Pawar");
+
+console.log(person_1.firstName);
+console.log(person_1.lastName);
