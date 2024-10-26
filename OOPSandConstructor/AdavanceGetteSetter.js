@@ -35,6 +35,15 @@ class Person {
     get fullNameOption(){
         return `${this.firstName} ${this.lastName}`
     }
+    setName(firstName , lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    set fullName(fullName){
+        const [firstName , lastName] = fullName.split(" ");
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }
 
 const person_1 = new Person("harshit" , "sharma" , 6);
