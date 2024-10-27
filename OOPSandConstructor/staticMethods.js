@@ -27,7 +27,7 @@ class Person{
         this.age = age;
     }
 
-    // this static are not function and can not call on the objects... this are directly connected to the class. it can call by class name
+    // this static methods and property are not function and can not call on the objects... this are directly connected to the class. it can call by class name
     static classInfo(){
         return 'this is a static method';
     }
