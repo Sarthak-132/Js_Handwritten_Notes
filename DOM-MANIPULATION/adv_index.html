@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM manipulation</title>
     <link rel="stylesheet" href="adv_style.css">
 </head>
+
 <body>
+
 
     <header class="header">
         <nav class="nav container">
@@ -23,6 +26,47 @@
         </div>
     </header>
 
+    <section class="todo-section container">
+        <h2 class="heading-todo">Your plan for today?</h2>
+        <form class="form-todo">
+            <input type="text" name="" id="" placeholder="Add new todo">
+            <input type="submit" value="Add Todo" class="btn">
+        </form>
+    </section>
+
+    <section class="section-signup container">
+        <h2>Sign Up</h2>
+        <form class="signup-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="confirmPassword">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea name="about" id="about" placeholder="about" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+    </section>
+
+
     <script src="adv_script.js"></script>
 </body>
+
 </html>

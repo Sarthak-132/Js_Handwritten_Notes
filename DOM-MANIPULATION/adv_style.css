@@ -8,6 +8,7 @@
 }
 
 .header{
+    position: relative;
     min-height: 100vh;
     background: url("image/synth.jpg");
     background-position: center;
@@ -20,6 +21,7 @@
 a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .container{
@@ -45,7 +47,6 @@ a{
 
 .headline{
     position: absolute;
-    /* background: #000; */
     padding: 10px;
     top: 50%;
     left: 50%;
@@ -65,4 +66,82 @@ a{
     font-size: 1rem;
     font-weight: 500;
     margin-top: 1rem;
+}
+
+.todo-section{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.heading-todo{
+    margin: 1.2rem;
+}
+
+.form-todo{
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-todo input{
+    min-height: 100%;
+}
+
+.form-todo input[type="text"]{
+    width: 78%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-todo input[type="submit"]{
+    width: 20%;
+    background: #001119;
+    color: white;
+    font-weight: bold;
+}
+
+
+.section-signup{
+    margin: 5rem auto;
+    text-align: center;
+    background: rgb(240,240,240);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.signup-form{
+    max-width: 800px;
+    width: 95%;
+    text-align: left;
+    margin: auto;
+}
+
+.signup-form label{
+    display: block;
+}
+
+.signup-form input{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.signup-form textarea{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    margin-top: 1rem;
+}
+
+.signup-btn{
+    background: rgb(44, 55, 63);
+    color: white;
+    padding: 0.8rem 2rem;
+    display: block;
+    margin: auto;
 }
