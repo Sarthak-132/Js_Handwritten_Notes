@@ -1,17 +1,31 @@
-on adding <script> in top = when html file will go to browser and it will parse
+1. on adding <script> in top = when html file will go to browser and it will parse
 (means render html file to browser - parse means browser read it line by line) 
 and then load script file first..... and parsing stop here beacause it will load 
 full js script and other code of html it is not parsed yet. so on execution time 
 js connected to html and it will not get that things those connected to html 
 and give execution error.
 
-on adding <script> in bottom = when js add on bottom then it will execute full code 
+2. on adding <script> in bottom = when js add on bottom then it will execute full code 
 properly because out html will parsed by browser firstly then js load and all the 
 elements of html that used in js will load properly with no technical error.
 drawback of this kind is that it is happening synchronously line by line execution
 1. parsing      2. js load      3. js execute
+time consuming method
 
-third type of writting js is that ----------->  
+3. third type of writting js is that -----------> in top <head> tag
+<script src = "index.js" async></script>
+Browser -> Index.html -> start parsing -> comes at head tags scriptTag 
+(async - both work will happen parallely(simultanously) parsing and js loading) 
+i.      parsing - if loading of js complete then it will stop parsing of html and first execute js
+ii.     loading js - loading complete
+drawback - here html is not fully parsed so the chances of error are also possible 
+if rest of the elements are used in js file
+
+4. final and the best way to use js script - on top of html file in <head> section
+<script src = "index.js" defer></script>
+i.      parsing - parsing is continue
+ii.     loading js - loading done in middle of parsing of html, then execute without stoping parsing
+time saving method
 
 A technical error refers to an incorrect or faulty procedure, process, or 
 implementation in a system, experiment, or operation, resulting in an unintended 
@@ -21,3 +35,7 @@ such as:
 Human mistake: A mistake made by a person involved in the process, like a misstep, misinterpretation, or incorrect data entry.
 System malfunction: A failure or glitch in the equipment, software, or hardware used in the process, leading to an incorrect outcome.
 Procedure deviation: A departure from standard operating procedures or protocols, causing an unintended consequence.
+
+DOM - DOCUMENT OBJECT MODEL
+
+console.log(window.document);
