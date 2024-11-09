@@ -37,7 +37,7 @@ a{
     align-items: center;
 }
 
-.nav-items{
+.nav-items-list{
     width: 40%;
     display: flex;
     list-style: none;
