@@ -101,6 +101,21 @@ a{
     font-weight: bold;
 }
 
+.todo-list{
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+
+.todo-list li{
+    padding: 0.7rem;
+    margin-top: 1.1rem;
+    background: #444;
+    color: cyan;
+    text-transform: capitalize;
+}
+
 
 .section-signup{
     margin: 5rem auto;
