@@ -7,4 +7,35 @@
 html,body{
     width: 100%;
     height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    min-width: 100px;
+    min-height: 100px;
+    padding: 5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.grandparent {
+    background: #344433;
+    color: white;
+}
+
+.parent{
+    background: #cb5c5c;
+}
+
+.child{
+    background: #8e9b4f;
 }
