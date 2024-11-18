@@ -29,23 +29,23 @@
 // hey.......
 // bye.......
 // I am running
-console.log("hey.......");
-const am = () => {
-    console.log("I am running");
-}
-setTimeout(am  , 2000);
-console.log("bye.......");
+// console.log("hey.......");
+// const am = () => {
+//     console.log("I am running");
+// }
+// setTimeout(am  , 2000);
+// console.log("bye.......");
 
 
 // another option to write setTimeout function          
 // listening......
 // Ending......
 // I am running on my path.......
-console.log("listening......")
-setTimeout(() =>{
-    console.log("I am running on my path.......");
-}, 1000);
-console.log("Ending......")
+// console.log("listening......")
+// setTimeout(() =>{
+//     console.log("I am running on my path.......");
+// }, 1000);
+// console.log("Ending......")
 
 // End result
 // hey.......
@@ -67,44 +67,149 @@ console.log("Ending......")
 // so setTimeout stay in callsatck queue then first for loop execute and last console.log will execute afterwards in 
 // last setTimeout will execute. 
 
-console.log("sun"); 
+// console.log("sun"); 
 
-setTimeout(() =>{
-    console.log("inside setTimeout");
-}, 0);
+// setTimeout(() =>{
+//     console.log("inside setTimeout");
+// }, 0);
 
-for(let i = 1; i < 100; i++ ){
-    console.log("I am loop");
-}
+// for(let i = 1; i < 100; i++ ){
+//     console.log("I am loop");
+// }
 
-console.log("End is new Beginning");
+// console.log("End is new Beginning");
 
 
 
 // clearTimeout - clearTimeout is used to stop setTimeout function
-console.log("sun"); 
+// console.log("sun"); 
 
-const id = setTimeout(() =>{
-    console.log("inside setTimeout");
-}, 0);
+// const id = setTimeout(() =>{
+//     console.log("inside setTimeout");
+// }, 0);
 
-for(let i = 1; i < 10; i++ ){
-    console.log("I am loop");
-}
-console.log("here is the id", id)
-clearTimeout(id);
-console.log("End is new Beginning");
+// for(let i = 1; i < 10; i++ ){
+//     console.log("I am loop");
+// }
+// console.log("here is the id", id)
+// clearTimeout(id);
+// console.log("End is new Beginning");
 
 
 
 
 
 // setInterval - setInterval executes the code repeatedly at the specified interval.
-console.log("buddy");
-const edit = setInterval(() =>{
-    console.log(Math.random());
-}, 1000);
-console.log("How you doing?");
+// console.log("buddy");
+// const edit = setInterval(() =>{
+//     console.log(Math.random());
+// }, 1000);
+// console.log("How you doing?");
+
+
+
+
+
+// CallBack Function - A JavaScript callback is a function which is to be executed after another function has finished execution. 
+// Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
+// callbacks function - mostly used in asynchronous programming 
+
+function myFunc(callback){
+    console.log("function is working");
+    callback();
+}
+function myFunc_2(){
+    console.log("function is working using callback");
+}
+// option 1 normal call 
+// myFunc();
+// myFunc_2();
+
+// option 2 call using callback function
+myFunc(myFunc_2)
+
+
+
+// another way of callback function
+function fight(back){
+    console.log("doing");
+    back();
+}
+
+fight(function(){
+    console.log("fighting");
+})
+
+
+
+// get two numbers
+function getTwoNumbers(num1, num2, callback){
+    console.log(num1, num2);
+    callback(num1, num2);
+}
+function addTwoNumbers(numb1, numb2){
+    console.log(numb1 + numb2);
+}
+getTwoNumbers(4, 6, addTwoNumbers);
+
+
+
+
+// in condition callback function 
+function getTwoNumbersHere(number1, number2, callback){
+    if(typeof number1 === "number" && typeof number2 === "number"){
+        callback(num1, num2);
+    }
+    else{
+        console.log("wrong data type")
+    }
+}
+
+function addTwoNumbersHere(numb_1, numb_2){
+    console.log(numb_1 + numb_2);
+}
+
+getTwoNumbersHere("4", "6", addTwoNumbersHere);
+
+
+
+
+
+// in condition with direct option 
+
+function getTwoNumbersHer(number1, number2, callback){
+    if(typeof number1 === "number" && typeof number2 === "number"){
+        callback(num1, num2);
+    }
+    else{
+        console.log("wrong data type")
+    }
+}
+
+getTwoNumbersHer(5, 6, function(num1, num2){
+    console.log(num1 + num2);
+});
+
+
+
+
+// with conditions error handling
+function getTwo(number1, number2, onsuccess , onfail){
+    if(typeof number1 === "number" && typeof number2 === "number"){
+        onsuccess(number1, number2);
+    }
+    else{
+        onfail();    
+    }
+}
+
+getTwo("4", "6", (num1, num2)=>{
+    console.log(num1 + num2);
+}, ()=>{
+    console.log("please type or pass correct data type");
+});
+
+
 
 
 
