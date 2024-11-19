@@ -1,5 +1,10 @@
 // This is asnychronous feature........ to show that use for loop in example and use any consoles
 
+// note -
+// setTimeout add in callback queue 
+// promises add in micro task queue 
+// if both are pending setTimeout and micro task then micro task will be executed first because they have more priority       
+
 // Promise - A promise in JavaScript is an object that represents the eventual completion or 
 // failure of an asynchronous operation.
 
@@ -29,6 +34,7 @@ friedRice.then((myRice)=>{
 
 
 
+
 //  another method for error handling then catch chaining 
 const book = ["The art of being alone", "rich dad poor dad", "deep work"];
 // prodcue promise
@@ -43,7 +49,7 @@ const books = new Promise ((resolve, reject) => {
     }
 })
 
-// consume promise
+// consume promise //here no need to call books like books()
 books.then((learn)=>{
     // resolve 
     console.log(learn);
@@ -55,4 +61,24 @@ books.then((learn)=>{
 
 
 
-// 
+
+
+// function returning promises 
+
+function promiseLaptop(){
+    const laptop = ["macOS", "Lenove", "hp"];
+    return new Promise((resolve, reject)=>{
+        if(laptop.includes("hp") && laptop.includes("Lenovo")){
+            resolve({value:"best laptop"});
+        }else{
+            reject(new Error("no laptop variety"))
+        }
+    })
+}
+
+//here need to call promisLaptop like laptop() because it is returning promise
+promiseLaptop().then((lapy)=>{
+    console.log(lapy);
+    }).catch((error)=>{ 
+        console.log(error);
+})
