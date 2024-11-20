@@ -1,8 +1,8 @@
 // XHR = XML HTTP Request
 
-const URL = "https://jsonplaceholder.typicode.com/posts"
+// const URL = "https://jsonplaceholder.typicode.com/posts"
 
-const xhr = new XMLHttpRequest();
+// const xhr = new XMLHttpRequest();
 
 // console.log(xhr);
 
@@ -66,6 +66,10 @@ const xhr = new XMLHttpRequest();
 
 // or 
 
+// const URL = "https://jsonplaceholder.typicode.com/posts"
+
+// const xhr = new XMLHttpRequest();
+
 // xhr.open("GET", URL);
 
 // xhr.onload = function (){
@@ -91,6 +95,50 @@ const xhr = new XMLHttpRequest();
 
 
 
-// Error Handling 
+// Error Handling / success / failure / server error
 
-const URl = "https://jsonplaceholder.typicode.com/posts";
+const URL = "https://jsonplaceholder.typicode.com/posts"
+
+const xhr = new XMLHttpRequest();
+
+xhr.open("GET", URL);
+
+xhr.onload = () =>{
+
+    // for successful or not status code 
+    
+    if(xhr.status >= 200 && xhr.status < 300){
+
+        const response = xhr.response;
+    
+        const data = JSON.parse(response);
+    
+        console.log(data);
+
+    }
+
+    else {
+
+        console.log("Something went wrong");
+
+    }
+
+
+}
+
+// Server ERROR hnadling property (500 - internal server error{backend})
+
+// this will work only when network error occur
+
+xhr.onerror = () => {
+
+    console.log("netwrok error");
+
+}
+
+xhr.send()
+
+
+
+
+

@@ -99,20 +99,21 @@ async function harry(){
    }catch(error){
        console.log(error);
    }
+
 }
 
 
-// const sherry = async () =>{
-//     console.log("I'm sherrry")
-// }
+const sherry = async () =>{
+    console.log("I'm sherrry")
+}
 
 
-// const mainly = async() =>{
-//     console.log("Welcome to weather control room")
-//     let a = await harry()
-//     let b = await sherry()
-//     console.log(a);
-//     // console.log(b);
-// }
+const mainly = async() =>{
+    console.log("Welcome to weather control room")
+    let a = await harry()
+    let b = await sherry()
+    // console.log(a);
+    // console.log(b);
+}
 
-// mainly();
+mainly();
