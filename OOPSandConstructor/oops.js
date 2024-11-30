@@ -7,7 +7,7 @@
 // let p = {
 //     run: () =>{
 //         alert('run');    //this run will run
-//     }
+//     } 
 // }
 // a.__proto__ = p
 // a.run();

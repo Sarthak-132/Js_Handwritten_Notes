@@ -11,6 +11,7 @@ let a = "Harrish";
 
 // typecasting in javascript :
 a = Number.parseInt(a);
+console.log(a);       //Nan
 
 
 

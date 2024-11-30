@@ -8,7 +8,7 @@ console.log(a);
 
 // You can change the type of the variable at run time in javascript 
 // suppose you create a variable with string you can change the type of the variable after that it means 
-// you don't need to define the type of the variable like string , bool , interger , array 
+// you don't need to define the type of the variable like string , bool , integer , array 
 
 
 var  v = 34;

@@ -10,7 +10,7 @@ class Animal {
       console.log(this.name + " is barking!")
     }
   }
-  
+
   class Monkey extends Animal {
     eatBanana() {
       console.log(this.name + " is eating banana")

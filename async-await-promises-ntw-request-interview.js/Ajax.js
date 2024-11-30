@@ -5,6 +5,7 @@
 // HTTP Request  
 
 // what is AJAX....?
+// AJAX is not a programming language.
 // is a set of web development techniques
 // using many web technologies on the "client side" 
 // to create asynchronous web application 

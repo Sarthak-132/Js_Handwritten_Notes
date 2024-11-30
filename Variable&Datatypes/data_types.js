@@ -27,7 +27,7 @@ const item = {
     "Rohan" : undefined 
 }
 console.log(item["harry"])    //true
-console.log(item.aryan)   //undefined
+console.log(item.aryan)   //76
 
 // difference between primitive and non primitive data types
 
@@ -35,9 +35,18 @@ console.log(item.aryan)   //undefined
 // non primitive : - those can change on runtime and can be more larger than primitive.
 
 
-// type conversion and type conversion
 
-// 1. when it converts by us the type of data
-// 2. when itself js  chnage the type of data  -  type conversion
+// type coersion and type conversion
 
+// 1. when it converts by us the type of data - converion
+const number = 30
+const numberConvert = String(number)
+console.log(numberConvert)          // "30"
+console.log(typeof numberConvert)   // string
+
+
+// 2. when itself js change the type of data  -  type coercion
+const sum = 35 + "hello"
+console.log(sum)                    // 35hello
+console.log(typeof sum)             // string
 

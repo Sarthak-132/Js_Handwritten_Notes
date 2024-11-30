@@ -57,7 +57,6 @@ class RailwayForm{
     }
 }
 
- 
 let harry = new RailwayForm();
 harry.fill('Harry', 374656);
 let Rohan = new RailwayForm();

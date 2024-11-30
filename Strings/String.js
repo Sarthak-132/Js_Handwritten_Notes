@@ -1,4 +1,6 @@
 // This is template litteral method (\n , \t , \r takes only one character)
+// string - A JavaScript string stores a series of characters like "John Doe". 
+// A string can be any text inside double or single quotes
 let a = "Mani";
 let b = "raj";
 
@@ -8,14 +10,18 @@ console.log(both);
 let name34 = "Hello\rHye"
 let name12 = "Hey\rHello"
 let name22 = "Haanji\rraam"
+let name24 = "Haanji\nraam"     // line break
+let name26 = "Haanji\traam"     // tab space
 console.log(name34);
 console.log(name12);
 console.log(name22);
+console.log(name24);
+console.log(name26);
 
 // strings are immutable you can not change them
 // methods of string-------->this also takes negative numbers
 let name1 = "Raja bhaijaan ";
-let name2 = 'thik   hai';
+let name2 = ' thik   hai';
 let str = "Apple, Banana, Kiwi";
 console.log(str.substring(7, 17));     // add first element and exclude last element
 console.log(str.substring(7));         //after 7 - Banana, Kiwi
@@ -27,7 +33,7 @@ console.log(name1.slice(2,9));    // add first element and exclude last elem
 console.log(name1.slice(1));
 console.log(name1.replace("bhai", "bhau"));    //replaceAll()
 console.log(name1.concat("", name2 , " ok "));
-console.log(name1.trim(name1));        //trimStart()  and trimEnd() #remove white space from start and end. 
+console.log(name2.trim());        //trimStart()  and trimEnd() #remove white space from start and end. 
 
 
 // // for loop for print string
@@ -36,7 +42,7 @@ for(let i=0; i<(name5.length); i++) {
     console.log(name5[i]);
 }
 
-// .include method : it will print true or false 
+// .includes method : it will print true or false 
 const sentence = "Hello, my name is Tom";
 const name = "Tom";
 console.log(sentence.includes(name)); 
@@ -53,7 +59,7 @@ let hammerMan = "I need 846 volts of electricity";
 
 
 
-// toString - cnvert in string
+// toString - convert in string "It will look like number but converted in string."
 let stringstring = 23;
 console.log(stringstring.toString());           // 23  
 console.log(typeof stringstring.toString());    // string
@@ -91,7 +97,7 @@ console.log(characterNum.charCodeAt(7));    //NaN   (When charactor not present 
 
 // startWith and endsWith check startswith or endswith or not - gives true or false
 
-let flask = "flare     gun";
+let flask = "      flare     gun";
 console.log(flask.startsWith("fl"));
 console.log(flask.endsWith("gun"));
 
