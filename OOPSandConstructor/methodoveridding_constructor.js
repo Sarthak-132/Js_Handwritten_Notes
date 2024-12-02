@@ -17,16 +17,17 @@ class Employee{
 // we are also create a constructor here if we want personal constructor for Programmer function below
 class Programmer extends Employee{
     requestCoffee(){
-        console.log(`Employe has requested ${x} coffees`)
+        console.log(`Employee has requested ${x} coffees`)
     }
     
     requestLeaves(leaves){
         super.requestLeaves(4)
         console.log('One extra leave is granted');
     }
-    
 }
 
-let e = new Programmer('larry')  // new Employee  will give same result bcz it extends from Employee   
+// new Employee will give same result bcz it extends from Employee
+let e = new Programmer('larry')     
 e.login()
 e.requestLeaves(3)
+

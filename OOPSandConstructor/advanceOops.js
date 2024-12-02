@@ -13,7 +13,7 @@
 // console.log(family.firstName);
 // console.log(family);
 
-
+ 
 
 
 
@@ -76,7 +76,7 @@
 //         // "use strict"
 //         console.log(this);
 //     }
-//     window.myFunc();                      // gives undefined 
+// window.myFunc();                      // gives undefined 
 
 
 
@@ -105,10 +105,10 @@
 //     age : 24,
 //     about(hobby , favMusician){
 //         console.log(this.firstName , this.age)
-//         console.log(this.firstName , this.age, hobby , favMusician );
+//         console.log(this.firstName , this.age, hobby , favMusician);
 //     }
 // }
- 
+
 // const user_2 = {
 //     firstName : "BhagwanDas",
 //     age : 26,
@@ -144,16 +144,16 @@
 // In noraml function like = client.about(); .....  it will take console.log(this) as main object or 
 // in arrow function like => client.about(); it will take console.log(this) as window object
 
-// const client = {
-//     NameFirst : "Mohan",
-//     age : 19,
-//     about : () => {
-//         console.log(this);        //--- it is calling window object
-//         console.log(this.NameFirst , this.age);
-//     }
-// }
-// client.about();                     // undefined undefined
-// client.about(client);
+const client = {
+    NameFirst : "Mohan",
+    age : 19,
+    about : () => {
+        console.log(this);        //--- it is calling window object
+        console.log(this.NameFirst , this.age);
+    }
+}
+client.about();                     // undefined undefined
+client.about(client);
 
 
 

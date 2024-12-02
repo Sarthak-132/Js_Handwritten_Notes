@@ -80,12 +80,12 @@ class Animal {
         this.age = age;
     }
     eat(){
-        return `${this.firstName} is eating.`;
+        return `${this.firstName} is eating.`; 
     }
     sleep(){
         return `${this.firstName} is sleeping.`;
     }
-    isCute(){
+    isCute(){ 
         return true;
     }
 }

@@ -1,19 +1,19 @@
 //  proto , prototype , class
 
-const user_1 = {
-    firstName : "Aditya",
-    lastName : "Jhariya",
-    email : "aditya@j.com",
-    age : 23,
-    address : "house number , colony , pincode , state",
-    // two methods
-    about : function(){
-        return `${this.firstName} is ${this.age} years old.`
-    },
-    is18(){
-        return this.age >= 18
-    }
-}
+// const user_1 = {
+//     firstName : "Aditya",
+//     lastName : "Jhariya",
+//     email : "aditya@j.com",
+//     age : 23,
+//     address : "house number , colony , pincode , state",
+//     // two methods
+//     about : function(){
+//         return `${this.firstName} is ${this.age} years old.`
+//     },
+//     is18(){
+//         return this.age >= 18
+//     }
+// }
 
 
 
@@ -117,7 +117,7 @@ const user_1 = {
 // obj_4.key1 = "hello";
 // console.log(obj_4.key1);                         // {naming: 'jakie', key1: 'hello'}
 
-// console.log(obj_4);                         // {naming: 'jakie'}                   // 
+// console.log(obj_4);                         // {naming: 'jakie'}                   
 
 
 // __proto__ , [[prototype]] , prototype
@@ -177,7 +177,7 @@ const user_1 = {
 
 
 
-// name properties teels us -----> name of function
+// name properties tells us -----> name of function
 // function provides more usefull properties
 // Note - function gives us free space ...... in actual free kind of nothing only empty object {} ..... for sake of explanation
 // and this object called prototype.....

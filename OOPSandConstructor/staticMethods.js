@@ -1,4 +1,4 @@
-// static methods and properties - static methods are methods that can call by class  adn not need to create object
+// static methods and properties - static methods are methods that can call by class and not need to create object
 // static property -  
 
 // class Animal{
@@ -19,7 +19,7 @@
 // console.log(jai('you'));  // it doesn't work it is a static function method
 
 
-
+                     
 class Person{
     constructor(firstName, lastName, age){
         this.firstName = firstName; 
