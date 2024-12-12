@@ -3,7 +3,7 @@
 // []
 // new Array()
 
-// let name = {};
+let name = {};
 // let newObj = new Object();
 // console.log(name);
 // console.log(newObj);
@@ -13,34 +13,34 @@
 // u update
 // d delete
 
-// name.section = "bi4";
-// name.studentName = "Aneesh";
-// name.address = "bhopal";
-// console.log(name);
-// let laptop = "asus";
-// let mouseName = "portonics";
+name.section = "bi4";
+name.studentName = "Aneesh";
+name.address = "bhopal";
+console.log(name);
+let laptop = "asus";
+let mouseName = "portonics";
 
-// let obj = {
-//     "role of student": "developer",
-//     name: "Bablu ji",
-//     section: "bia4",
-//     laptop: "",
-//     [mouseName]: true,
-// };
-// console.log(obj);
+let obj = {
+    "role of student": "developer",
+    name: "Bablu ji",
+    section: "bia4",
+    laptop: "",
+    [mouseName]: true,
+};
+console.log(obj);
 // // dot notation
-// console.log(obj.name);
-// console.log(obj.section);
-// console.log(obj["role of student"]); //bracket notation
-// console.log(obj["asus"]);
-// obj.name = "Aneesh the great hero";
+console.log(obj.name);
+console.log(obj.section);
+console.log(obj["role of student"]); //bracket notation
+console.log(obj["asus"]);
+obj.name = "Aneesh the great hero";
 // console.log(obj);
 // console.log(obj.laptop);
 // obj.laptop = "dell";
 // console.log(obj);
 
-// obj["role of student"] = "Backend developer";
-// console.log(obj);
+obj["role of student"] = "Backend developer";
+console.log(obj);
 
 // console.log(obj[mouseName]);
 // obj[mouseName] = false;
@@ -49,21 +49,21 @@
 // delete obj.name;
 // delete obj[mouseName];
 // console.log(obj);
-// let obj1 = {
-//     "role of student": "developer",
-//     name: "Bablu ji",
-//     section: "bia4",
-//     laptop: "",
-//     [mouseName]: true,
-// };
+let obj1 = {
+    "role of student": "developer",
+    name: "Bablu ji",
+    section: "bia4",
+    laptop: "",
+    [mouseName]: true,
+};
 
 // O
 
-// Object.entries() //in array for
-// let allKeys = Object.keys(obj);
-// console.log(allKeys);
-// let allValues = Object.values(obj);
-// console.log(allValues);
+Object.entries() //in array for
+let allKeys = Object.keys(obj);
+console.log(allKeys);
+let allValues = Object.values(obj);
+console.log(allValues);
 
 // let allEntries = Object.entries(obj);
 // console.log(allEntries);

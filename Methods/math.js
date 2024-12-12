@@ -16,7 +16,7 @@ console.log(Math.max(...array));
 
 let x = 10.5;
 let y = 10.7;
-console.log(Math.floor(x));   //10
+console.log(Math.floor(y));   //10
 
 // ceil 
 
