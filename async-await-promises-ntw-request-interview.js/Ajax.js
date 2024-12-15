@@ -20,4 +20,5 @@
 // 1.xmlHTTPRequest(old way of doing)
 // 2.fetch API
 // 3.axios(this is third party library)
+// 4.async await
 

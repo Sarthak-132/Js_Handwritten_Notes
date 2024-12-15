@@ -81,15 +81,15 @@
 
 // promises
 
-const head1 = document.querySelector(".heading1")
-const head2 = document.querySelector(".heading2")
-const head3 = document.querySelector(".heading3")
-const head4 = document.querySelector(".heading4")
-const head5 = document.querySelector(".heading5")
-const head6 = document.querySelector(".heading6")
-const head7 = document.querySelector(".heading7")
-const head8 = document.querySelector(".heading8")
-const head9 = document.querySelector(".heading9")
+// const head1 = document.querySelector(".heading1")
+// const head2 = document.querySelector(".heading2")
+// const head3 = document.querySelector(".heading3")
+// const head4 = document.querySelector(".heading4")
+// const head5 = document.querySelector(".heading5")
+// const head6 = document.querySelector(".heading6")
+// const head7 = document.querySelector(".heading7")
+// const head8 = document.querySelector(".heading8")
+// const head9 = document.querySelector(".heading9")
 
 // const red = Math.floor(Math.random() * 256);
 // const green = Math.floor(Math.random() * 256);
@@ -97,33 +97,33 @@ const head9 = document.querySelector(".heading9")
 // const rgb = `rgb(${red}, ${green}, ${blue})`;
 // body.style.backgroundColor = rgb;
 
-function changeText(elem, text, rgb, time, onsuccess, onfailure){
+// function changeText(elem, text, rgb, time, onsuccess, onfailure){
     
-    setTimeout(()=>{
-        if(elem){
-            elem.textContent = text;
-            elem.style.color = rgb;
-            // onsuccess() - do not do like that
-            if(onsuccess){
-                onsuccess();
-            }
-            else{
-                if(onfailure){
-                    onfailure();
-                }
-            }
-        }
-    }, time)
-}
+//     setTimeout(()=>{
+//         if(elem){
+//             elem.textContent = text;
+//             elem.style.color = rgb;
+//             // onsuccess() - do not do like that
+//             if(onsuccess){
+//                 onsuccess();
+//             }
+//             else{
+//                 if(onfailure){
+//                     onfailure();
+//                 }
+//             }
+//         }
+//     }, time)
+// }
 
 // changeText(head1, "one", "green" , 2000 , ()=>{
 //     changeText(head2, "two", "red" , 2000)
 // })
 
-changeText(head1, "one", "green", 2000, ()=>{
-    changeText(head2, "two", "red", 2000, ()=>{
-        changeText(head3, "three", "yellow", 2000, ()=>{
+// changeText(head1, "one", "green", 2000, ()=>{
+//     changeText(head2, "two", "red", 2000, ()=>{
+//         changeText(head3, "three", "yellow", 2000, ()=>{
     
-        }, ()=>{console.log("Error")});
-    }, ()=>{console.log("Error")});
-}, ()=>{console.log("Error")});
+//         }, ()=>{console.log("Error")});
+//     }, ()=>{console.log("Error")});
+// }, ()=>{console.log("Error")});

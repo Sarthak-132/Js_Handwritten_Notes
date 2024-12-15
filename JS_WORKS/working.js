@@ -1,9 +1,10 @@
 // compilation 
+
 // code execution 
 
 // why compilation
 
-//  hoW js code is execute ?
+// hoW js code is execute ?
 
 // what is global execution context ?
 
@@ -49,15 +50,16 @@
 // let and const are hoisted but it is uninitialized.
 
 
-// Hoisting - before execution this things storing in memory
+// Hoisting - before execution this things storing in memory and excute only works for var keyword
+// TDZ = 
 
 
-// TDZ - temporal dead zone - A block’s temporal dead zone starts at the beginning of the block’s local scope. 
+// (TDZ)temporal dead zone - A block’s temporal dead zone starts at the beginning of the block’s local scope. 
 // It ends when the computer fully initializes your variable with a value.
 // Below are examples illustrating where a block’s temporal dead zone starts and ends.
 
 
-// {
+{
     // bestFood's TDZ starts here (at the beginning of this block's local scope)
     // bestFood's TDZ continues here
     // bestFood's TDZ continues here
@@ -69,13 +71,13 @@
     // bestFood's TDZ does not exist here
     // bestFood's TDZ does not exist here
     // bestFood's TDZ does not exist here
-//   }
+  }
  
 // bestFood's TDZ continues here
-// let bestFood; // bestFood's TDZ ends here
-// console.log(bestFood); // returns undefined because bestFood's TDZ does not exist here
-// bestFood = "Vegetable Fried Rice"; // bestFood's TDZ does not exist here
-// console.log(bestFood); // returns "Vegetable Fried Rice" because bestFood's TDZ does not exist here
+let bestFood; // bestFood's TDZ ends here
+console.log(bestFood); // returns undefined because bestFood's TDZ does not exist here
+bestFood = "Vegetable Fried Rice"; // bestFood's TDZ does not exist here
+console.log(bestFood); // returns "Vegetable Fried Rice" because bestFood's TDZ does not exist here
 
 
 var fname;
@@ -100,4 +102,5 @@ console.log(first);                     // harsha
 
 
 
-// function execution context - 
+// function execution context -
+

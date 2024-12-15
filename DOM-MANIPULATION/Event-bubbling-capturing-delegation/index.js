@@ -4,29 +4,29 @@
 // DOM hierarchy, allowing each ancestor to respond to the event.
 
 
-// const grandparent = document.querySelector('.grandparent');
-// const parent = document.querySelector('.parent');
-// const child = document.querySelector('.child');
+const grandparent = document.querySelector('.grandparent');
+const parent = document.querySelector('.parent');
+const child = document.querySelector('.child');
 
-// // here if click on grandparent then only this click() will be fired
-// grandparent.addEventListener("click", function(){
-//     console.log("you clicked on grandparent.");
-// })
+// here if click on grandparent then only this click() will be fired
+grandparent.addEventListener("click", function(){
+    console.log("you clicked on grandparent.");
+})
 
-// // here if click on parent then only this click() will be fired and grandparent as well due to it's child of grandparent
-// parent.addEventListener("click", function(){
-//     console.log("you clicked on parent.");
-// })
+// here if click on parent then only this click() will be fired and grandparent as well due to it's child of grandparent
+parent.addEventListener("click", function(){
+    console.log("you clicked on parent.");
+})
 
-// // here if click on child then all three click event will be fired due to these are parent of child
-// child.addEventListener("click", function(){
-//     console.log("you clicked on child.");        
-// })
+// here if click on child then all three click event will be fired due to these are parent of child
+child.addEventListener("click", function(){
+    console.log("you clicked on child.");        
+})
 
-// // it is a main parent of all so if we will click anywhere it will definately fire  
-// document.body.addEventListener("click", function(){
-//     console.log("you clicked on body.");        
-// })
+// it is a main parent of all so if we will click anywhere it will definately fire  
+document.body.addEventListener("click", function(){
+    console.log("you clicked on body.");        
+})
 
 
 

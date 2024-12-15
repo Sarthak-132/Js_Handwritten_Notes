@@ -156,7 +156,7 @@ client.about();                     // undefined undefined
 client.about(client);
 
 
-
+// using call apply bind we can change execution context 
 
 
 
