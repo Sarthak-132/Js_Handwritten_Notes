@@ -15,4 +15,4 @@ let a = () => {
     console.log(d)
   })()
   
-  
+  // that don't have name and and excutes immediately no need to console it.
